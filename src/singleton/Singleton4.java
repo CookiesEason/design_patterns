@@ -7,7 +7,7 @@ package singleton;
  */
 public class Singleton4 {
 
-    private static Singleton4 singleton = null;
+    private static volatile Singleton4 singleton = null;
 
     private Singleton4() {}
 
