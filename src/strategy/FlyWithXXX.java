@@ -7,6 +7,6 @@ package strategy;
 public class FlyWithXXX implements FlyBehave {
     @Override
     public void fly() {
-
+        System.out.println("fly with xxx");
     }
 }
