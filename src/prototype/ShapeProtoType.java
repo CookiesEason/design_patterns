@@ -15,6 +15,11 @@ public class ShapeProtoType {
         return (Shape) cacheShape.clone();
     }
 
+    public static Shape getDeepShape(Integer shapeId) {
+        Shape cacheShape = shapeTable.get(shapeId);
+        return (Shape) cacheShape.deepClone();
+    }
+
     public static void loadCache() {
         Circle circle = new Circle();
         circle.setId(1);
